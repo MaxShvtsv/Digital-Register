@@ -1,0 +1,65 @@
+/*Button*/
+#buttonExit, #buttonLogin, #buttonFeedback, #buttonAdmin,
+#buttonInfo, #buttonRefresh, #sendButton{
+    background: skyblue;
+    height: 25px;
+    width: 100px;
+    border: none;
+    border: 1px solid black;
+}
+#buttonExit:hover, #buttonLogin:hover, #buttonFeedback:hover, #buttonAdmin:hover,
+#buttonInfo:hover, #buttonRefresh:hover, #sendButton:hover{
+    background: white;
+}
+/*Combo box*/
+QComboBox {
+    border: 1px solid black;
+    height: 25px;
+    width: 100px;
+    background: skyblue;
+}
+QComboBox:editable {
+    background: white;
+}
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #e1e1e1, stop: 0.4 #ddddd,
+                                 stop: 0.5 #d8d8d8, stop: 1.0 #d3d3d3);
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D3D3D3,
+                                stop: 0.5 #D3D3D3, stop: 1.0 #D3D3D3);
+}
+QComboBox::drop-down {
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid;
+}
+/*Line edit*/
+QLineEdit {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: skyblue;
+    selection-background-color: black;
+    height: 20px;
+}
+/*Label*/
+QLabel {
+    font-size: 15px;
+    font-family: 'Sans-serif';
+}
+/*Table*/
+QTableWidget{
+    border: 2px solid skyblue;
+}
+QHeaderView::section {
+    border: none;
+    background: yellowgreen;
+    border: 1px solid black;
+    padding: 1px;
+}
+/*Text area*/
+#textArea{
+    border: 2px solid skyblue;
+}
